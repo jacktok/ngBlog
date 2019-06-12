@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blogToturial';
+  name = 'my name'
+
+  isTest = true;
+  updateName(str: string) {
+    this.name = str;
+    this.isTest = str == '';
+  }
+
+
 }

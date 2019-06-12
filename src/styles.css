@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.space {
+    flex: 1 1 auto;
+}
+
+.card {
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+.row {
+    max-width: 900px;
+    margin: auto;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+.img-box {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.text-content {
+    display: block;
+}
+
+.toolbar {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+.body {
+    top: 500px;
+}

@@ -1,0 +1,9 @@
+<mat-card class="card">
+    <mat-card-title>
+        <a [routerLink]="[ '/post', post.id ]"> {{ post.title }}</a>
+    </mat-card-title>
+    <mat-card-content>
+        <img mat-card-sm-image class="img-box" [src]="post.imgDisplay">
+        <p class="text-content">{{ post.content }}</p>
+    </mat-card-content>
+</mat-card>

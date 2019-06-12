@@ -1,0 +1,17 @@
+<mat-card class="card">
+    <mat-card-title>
+        {{ post.title }}
+    </mat-card-title>
+    <mat-card-content>
+        <img mat-card-sm-image class="img-box" [src]="post.imgDisplay">
+        <p class="text-content">{{ post.content }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <span [ngSwitch]="isLike">
+          <button mat-button  *ngSwitchCase="true" (click)="postService.removeFavorite(post.id); isLike = false">DISLIKE</button>
+    
+          <button mat-button  *ngSwitchDefault class="like" (click)="postService.addFavorite(post.id); isLike = true">LIKE</button>
+    
+      </span>
+    </mat-card-actions>
+</mat-card>
